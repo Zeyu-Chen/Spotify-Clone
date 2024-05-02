@@ -37,6 +37,7 @@ const MediaItem: React.FC<MediaItemProps> = ({
           alt='Image'
           className='object-cover'
           sizes='128px'
+          priority
         />
       </div>
       <div className='flex flex-col gap-y-1 overflow-hidden'>
