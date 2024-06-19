@@ -1,11 +1,11 @@
 'use client';
 
-import { ProductWithPrice } from '@/types';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import AuthModal from '@/components/AuthModal';
 import SubscribeModal from '@/components/SubscribeModal';
 import UploadModal from '@/components/UploadModal';
+import { ProductWithPrice } from '@/types';
 
 interface ModalProviderProps {
   products: ProductWithPrice[];
