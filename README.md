@@ -1,30 +1,10 @@
-# Full Stack Spotify Clone with Next.js 13.4 App Router: React, Tailwind, Supabase, PostgreSQL, Stripe
+# Full Stack Spotify Clone with Next.js 13.4 App Router: React, Tailwind, Supabase, PostgreSQL, Stripe & TypeScript
 
-![Full Stack Spotify Clone with Next.js 13](https://user-images.githubusercontent.com/23248726/241812095-2722c7bd-2d8f-44a9-97b9-f2711a8d8b64.png)
+Tutorial Followed: [Code With Antonio - Full Stack Spotify Clone](https://youtu.be/2aeMRB8LL4o)
+<br>
+Instructor: [Antonio Erdeljac](https://github.com/antonioerdeljac)
 
-This is a repository for a Full Stack Spotify Clone with Next.js 13.4 App Router: React, Tailwind, Supabase, PostgreSQL, Stripe.
-
-## Live Demo
-
-- [Spotify Clone](https://spotify-ajfm88.vercel.app)
-
-## Demo Info
-
-When testing the app, feel free to sign up with your own email or you can also use this test account:
-
-Email: tebever947@storesr.com
-
-Password: test1234
-
-Also, it will ask for a Spotify Premium subscription (after being logged in). Please use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
-
-- Use a valid future date, such as 12/34.
-- Use any three-digit CVC (four digits for American Express cards).
-- Use any value you like for other form fields.
-
-For more info: [Stripe Testing Cards](https://stripe.com/docs/testing)
-
-## Features
+Key Features:
 
 - Song upload
 - Stripe integration
@@ -41,8 +21,8 @@ For more info: [Stripe Testing Cards](https://stripe.com/docs/testing)
 - Playlists / Liked songs system
 - Advanced Player component
 - Stripe recurring payment integration
-- How to write POST, GET, and DELETE routes in route handlers (app/api)
-- How to fetch data in server React components by directly accessing the database (WITHOUT API! like Magic!)
+- POST, GET, and DELETE routes in route handlers (app/api)
+- Fetch data in server React components by directly accessing the database
 - Handling relations between Server and Child components in a real-time environment
 - Cancelling Stripe subscriptions
 
@@ -53,7 +33,7 @@ For more info: [Stripe Testing Cards](https://stripe.com/docs/testing)
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/ajfm88/spotify-clone.git
+git clone https://github.com/nayak-nirmalya/spotify-clone.git
 ```
 
 ### Install packages
@@ -62,7 +42,7 @@ git clone https://github.com/ajfm88/spotify-clone.git
 npm i
 ```
 
-### Setup .env file
+### Setup .env File
 
 ```js
 NEXT_PUBLIC_SUPABASE_URL=
@@ -76,9 +56,9 @@ STRIPE_WEBHOOK_SECRET=
 
 ### Add SQL Tables
 
-Use `database.sql` file, create songs and liked_songs table (there is a video tutorial)
+Use `database.sql` file to create songs and liked_songs table in Supabase.
 
-### Start the app
+### Start the App
 
 ```shell
 npm run dev
@@ -88,10 +68,12 @@ npm run dev
 
 Running commands with npm `npm run [command]`
 
-| command | description                              |
-| :------ | :--------------------------------------- |
-| `dev`   | Starts a development instance of the app |
-
-#### Original Course
-
-- [Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind (2023) by Code With Antonio](https://youtu.be/2aeMRB8LL4o)
+| command         | description                                         |
+| :-------------- | :-------------------------------------------------- |
+| `dev`           | Starts a development instance of the app            |
+| `build`         | Starts a building final version for production      |
+| `start`         | Run final production build version                  |
+| `lint`          | Run lint check as configured in .eslintrc.json file |
+| `gen:dbtypes`   | Generate Types for Databases                        |
+| `stripe:login`  | Login to Stripe from stripe-cli                     |
+| `stripe:listen` | Listen to Webhooks for Stripe Events                |

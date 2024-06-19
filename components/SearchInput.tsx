@@ -1,34 +1,33 @@
-'use client';
+"use client";
 
-import qs from 'query-string';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import useDebounce from "@/hooks/useDebounce";
+import Input from "./Input";
 
-import useDebounce from '@/hooks/useDebounce';
-
-import Input from './Input';
+import { useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import qs from "query-string";
 
 const SearchInput = () => {
   const router = useRouter();
-  const [value, setValue] = useState<string>('');
-  const debouncedValue = useDebounce<string>(value, 500);
+  const [value, setValue] = useState<string>("");
+  const debounceValue = useDebounce<string>(value, 500);
 
   useEffect(() => {
     const query = {
-      title: debouncedValue,
+      title: debounceValue
     };
 
     const url = qs.stringifyUrl({
-      url: '/search',
-      query,
+      url: "/search",
+      query: query
     });
 
     router.push(url);
-  }, [debouncedValue, router]);
+  }, [debounceValue, router]);
 
   return (
     <Input
-      placeholder='What do you want to listen to?'
+      placeholder="What do you want to listen to?"
       value={value}
       onChange={(e) => setValue(e.target.value)}
     />
