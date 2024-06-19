@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full Stack Spotify Clone with Next.js 13.4 App Router: React, Tailwind, Supabase, PostgreSQL, Stripe
 
-## Getting Started
+![Full Stack Spotify Clone with Next.js 13](https://user-images.githubusercontent.com/23248726/241812095-2722c7bd-2d8f-44a9-97b9-f2711a8d8b64.png)
 
-First, run the development server:
+This is a repository for a Full Stack Spotify Clone with Next.js 13.4 App Router: React, Tailwind, Supabase, PostgreSQL, Stripe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Live Demo
+
+- [Spotify Clone](https://spotify-ajfm88.vercel.app)
+
+## Demo Info
+
+When testing the app, feel free to sign up with your own email or you can also use this test account:
+
+Email: tebever947@storesr.com
+
+Password: test1234
+
+Also, it will ask for a Spotify Premium subscription (after being logged in). Please use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+
+- Use a valid future date, such as 12/34.
+- Use any three-digit CVC (four digits for American Express cards).
+- Use any value you like for other form fields.
+
+For more info: [Stripe Testing Cards](https://stripe.com/docs/testing)
+
+## Features
+
+- Song upload
+- Stripe integration
+- Tailwind design for sleek UI
+- Tailwind animations and transition effects
+- Full responsiveness for all devices
+- Credential authentication with Supabase
+- Github authentication integration
+- File and image upload using Supabase storage
+- Client form validation and handling using react-hook-form
+- Server error handling with react-toast
+- Play song audio
+- Favorites system
+- Playlists / Liked songs system
+- Advanced Player component
+- Stripe recurring payment integration
+- How to write POST, GET, and DELETE routes in route handlers (app/api)
+- How to fetch data in server React components by directly accessing the database (WITHOUT API! like Magic!)
+- Handling relations between Server and Child components in a real-time environment
+- Cancelling Stripe subscriptions
+
+### Prerequisites
+
+**Node version 14.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/ajfm88/spotify-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
 
-## Learn More
+```js
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Add SQL Tables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Use `database.sql` file, create songs and liked_songs table (there is a video tutorial)
 
-## Deploy on Vercel
+### Start the app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```shell
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
+
+#### Original Course
+
+- [Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind (2023) by Code With Antonio](https://youtu.be/2aeMRB8LL4o)
