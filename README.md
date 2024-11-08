@@ -1,5 +1,12 @@
 # Spotify Clone
 
+![Next.js](https://img.shields.io/badge/Next.js-13-000000?logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-2-3ECF8E?logo=supabase&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-12-008CDD?logo=stripe&logoColor=white)
+
 A modern full-stack Spotify clone that allows users to upload, stream, and manage music with premium subscription features.
 
 ## Features
